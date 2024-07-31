@@ -1,11 +1,11 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
+id: comet-debrid
+name: Comet (Debrid)
 tagline: Replace this tagline with your app's tagline
 icon: https://svgur.com/i/mvA.svg
-category: Development
+category: Media
 version: "1.0.0"
-port: 4000
+port: 3123
 description: >-
   Add your app's description here.
 
