@@ -2,6 +2,10 @@
 version: "3.8"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: comet-debrid_server_1
+      APP_PORT: 3123
 # This is a Comet full stack with Zilean, flaresolverr, Warp, Prowlarr/Jackett deployed through docker compose using Traefik as a reverse proxy.
   Comet:
     image: g0ldyy/comet
@@ -10,8 +14,6 @@ services:
     ports: #uncomment this if you're not using a reverse proxy
       - "${APP_PORT}:8000"
     environment: #comment this out/remove if you want to use a .env file
-      APP_HOST: comet-debrid_server_1
-      APP_PORT: 3123
       - ADDON_ID=stremio.comet.fast # for Stremio
       - ADDON_NAME=Comet # for Stremio
       - FASTAPI_HOST=0.0.0.0
