@@ -4,7 +4,7 @@ version: "3.8"
 services:
   app_proxy:
     environment:
-      APP_HOST: comet-debrid_server_1
+      APP_HOST: debrid-comet_server_1
       APP_PORT: 3123
 # This is a Comet full stack with Zilean, flaresolverr, Warp, Prowlarr/Jackett deployed through docker compose using Traefik as a reverse proxy.
   Comet:
